@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    font: arial;
+}
+
+.items{
+  margin-left: 15px;
 }
 
 .navbar {
@@ -15,8 +20,8 @@ body {
 }
 
 .footer {
+  margin: 0;
   height: 75px;
   background-color: pink;
   color: black;
-  
 }

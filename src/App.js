@@ -9,17 +9,17 @@ function App(){
   return(
     <div>
       <Header />
-      <input type="checkbox" />
-      <p>Item 1</p>
+      <input type="checkbox"/>
+      <p className="items">Item 1</p>
 
       <input type="checkbox" />
-      <p>Item 2</p>
+      <p className="items">Item 2</p>
 
-      <input type="checkbox" />
-      <p>Item 3</p>
+      <input type="checkbox"/>
+      <p className="items">Item 3</p>
 
-      <input type="checkbox" />
-      <p>Item 4</p>
+      <input type="checkbox"/>
+      <p className="items">Item 4</p>
       <Footer />
     </div>
   )
