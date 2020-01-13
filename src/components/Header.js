@@ -1,8 +1,7 @@
 import React from "react"
 
 function Header() {
-  const firstName = "Katie"
-  const lastName = "Wilday"
+  const currentUser = "Katie Wilday"
   const date = new Date()
   const hours = date.getHours()
   let timeOfDay
@@ -12,16 +11,16 @@ function Header() {
 
   if (hours < 12) {
     timeOfDay = "Morning"
-    styles.color = "#04756F"
+    styles.color = "teal"
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = "Afternoon"
-    styles.color = "#2E0927"
+    styles.color = "orange"
   } else {
     timeOfDay = "Evening"
-    styles.color = "#D90000"
+    styles.color = "lightBlue"
   }
     return (
-        <header className="navbar">Good {`${timeOfDay}, ${firstName} ${lastName}`}!</header>
+        <header className="navbar" style={styles}>Good {` ${timeOfDay}, ${currentUser}`}!</header>
     )
 }
 
